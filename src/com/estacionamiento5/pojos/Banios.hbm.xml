@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/02/2018 08:56:57 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="estacionamiento" name="com.estacionamiento5.pojos.Banios" optimistic-lock="version" table="banios">
+    <id name="id" type="string">
+      <column length="20" name="id_servbanio"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nombre" type="string">
+      <column length="20" name="nomservbanio" unique="true"/>
+    </property>
+    <property name="costo" type="big_decimal">
+      <column name="costo" precision="10"/>
+    </property>
+  </class>
+</hibernate-mapping>

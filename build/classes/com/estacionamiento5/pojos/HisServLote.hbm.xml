@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/02/2018 08:56:57 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="estacionamiento" name="com.estacionamiento5.pojos.HisServLote" optimistic-lock="version" table="his_serv_lote">
+    <id name="cns" type="java.lang.Long">
+      <column name="cns"/>
+      <generator class="identity"/>
+    </id>
+    <property name="idServicio" type="java.lang.Long">
+      <column name="id_servicio"/>
+    </property>
+    <property name="idLote" type="java.lang.Long">
+      <column name="id_lote"/>
+    </property>
+    <property name="idServicioL" type="string">
+      <column length="20" name="id_servicio_l"/>
+    </property>
+    <property name="tiempo" type="string">
+      <column length="20" name="tiempo"/>
+    </property>
+  </class>
+</hibernate-mapping>

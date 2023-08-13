@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/02/2018 08:56:57 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="estacionamiento" name="com.estacionamiento5.pojos.Coches" optimistic-lock="version" table="coches">
+    <id name="idCoche" type="string">
+      <column length="20" name="id_coche"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="idCliente" type="string">
+      <column length="20" name="id_cliente" not-null="true"/>
+    </property>
+    <property name="modelo" type="string">
+      <column length="65535" name="modelo" not-null="true"/>
+    </property>
+    <property name="placas" type="string">
+      <column length="20" name="placas"/>
+    </property>
+    <property name="fechaAlta" type="timestamp">
+      <column length="19" name="fecha_alta"/>
+    </property>
+  </class>
+</hibernate-mapping>

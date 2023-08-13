@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/02/2018 08:56:57 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="estacionamiento" name="com.estacionamiento5.pojos.Auditoria" optimistic-lock="version" table="auditoria">
+    <id name="idServicio" type="java.lang.Long">
+      <column name="id_servicio"/>
+      <generator class="identity"/>
+    </id>
+    <property name="tipoServicio" type="string">
+      <column length="65535" name="tipo_servicio"/>
+    </property>
+    <property name="fecha1" type="timestamp">
+      <column length="19" name="fecha1"/>
+    </property>
+    <property name="fecha2" type="timestamp">
+      <column length="19" name="fecha2"/>
+    </property>
+    <property name="costo" type="big_decimal">
+      <column name="costo" precision="10"/>
+    </property>
+    <property name="fecha" type="timestamp">
+      <column length="19" name="fecha"/>
+    </property>
+    <property name="transaccion" type="boolean">
+      <column name="transaccion"/>
+    </property>
+  </class>
+</hibernate-mapping>

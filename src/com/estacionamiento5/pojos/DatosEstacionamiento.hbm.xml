@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="estacionamiento" name="com.estacionamiento5.pojos.DatosEstacionamiento" optimistic-lock="version" table="datos_estacionamiento">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nombre" type="string">
+      <column length="65535" name="nombre"/>
+    </property>
+    <property name="direccion" type="string">
+      <column length="65535" name="direccion"/>
+    </property>
+    <property name="colonia" type="string">
+      <column length="65535" name="colonia"/>
+    </property>
+    <property name="cp" type="java.lang.Integer">
+      <column length="11" name="cp"/>
+    </property>
+    <property name="municipio" type="string">
+      <column length="65535" name="municipio"/>
+    </property>
+    <property name="estado" type="string">
+      <column length="65535" name="estado"/>
+    </property>
+    <property name="regimen" type="string">
+      <column length="65535" name="regimen"/>
+    </property>
+    <property name="rfc" type="string">
+      <column length="65535" name="rfc"/>
+    </property>
+    <property name="ticketSerie" type="string">
+      <column length="5" name="ticket_serie"/>
+    </property>
+    <property name="horarioLunesViernesApertura" type="time">
+      <column length="8" name="horario_lunes_viernes_apertura"/>
+    </property>
+    <property name="horarioLunesViernesCierre" type="time">
+      <column length="8" name="horario_lunes_viernes_cierre"/>
+    </property>
+    <property name="horarioSabadoApertura" type="time">
+      <column length="8" name="horario_sabado_apertura"/>
+    </property>
+    <property name="horarioSabadoCierre" type="time">
+      <column length="8" name="horario_sabado_cierre"/>
+    </property>
+    <property name="horarioDomingoApertura" type="time">
+      <column length="8" name="horario_domingo_apertura"/>
+    </property>
+    <property name="horarioDomingoCierre" type="time">
+      <column length="8" name="horario_domingo_cierre"/>
+    </property>
+    <property name="montoPerdidaTicket" type="big_decimal">
+      <column name="monto_perdida_ticket" precision="10"/>
+    </property>
+  </class>
+</hibernate-mapping>

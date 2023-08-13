@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/02/2018 08:56:57 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="estacionamiento" name="com.estacionamiento5.pojos.Lotes" optimistic-lock="version" table="lotes">
+    <id name="idLote" type="java.lang.Long">
+      <column name="id_lote"/>
+      <generator class="identity"/>
+    </id>
+    <property name="estado" type="string">
+      <column length="20" name="estado"/>
+    </property>
+    <property name="servicio" type="string">
+      <column length="25" name="servicio"/>
+    </property>
+    <property name="inicio" type="timestamp">
+      <column length="19" name="inicio"/>
+    </property>
+  </class>
+</hibernate-mapping>
